@@ -6,12 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 import pl.lukaszmakuch.container.Exception.UnableToGetValue;
 
-public class UpperBoundedKeyObjectClassBasedMap<K, V> implements ObjectToObjectMap<K, V>
+public class UpperBoundedClassBasedMap<K, V> implements ObjectToObjectMap<K, V>
 {
     private Deque<Class<? extends K>> supportedClasses = new ArrayDeque<>();
     private Map<Class<? extends K>, V> valuesByClasses = new HashMap<>();
     
-    public UpperBoundedKeyObjectClassBasedMap<K, V> associate(
+    public UpperBoundedClassBasedMap<K, V> associate(
         Class<? extends K> keyObjectClass, 
         V value
     ) {

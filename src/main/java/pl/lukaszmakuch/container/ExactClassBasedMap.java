@@ -4,11 +4,11 @@ import pl.lukaszmakuch.container.Exception.UnableToGetValue;
 import java.util.Map;
 import java.util.HashMap;
 
-public class ExactKeyObjectClassBasedMap<K, V> implements ObjectToObjectMap<K, V>
+public class ExactClassBasedMap<K, V> implements ObjectToObjectMap<K, V>
 {
     private Map<Class, V> valuesByClasses = new HashMap<>();
     
-    public ExactKeyObjectClassBasedMap<K, V> associate(
+    public ExactClassBasedMap<K, V> associate(
         Class<? extends K> keyObjectClass, 
         V value
     ) {

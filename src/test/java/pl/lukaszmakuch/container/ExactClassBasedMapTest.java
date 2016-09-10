@@ -6,7 +6,7 @@ import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 import pl.lukaszmakuch.container.Exception.UnableToGetValue;
 
-public class ExactKeyObjectClassBasedMapTest
+public class ExactClassBasedMapTest
 {
     @Rule
     public ExpectedException thrown = ExpectedException.none();
@@ -16,7 +16,7 @@ public class ExactKeyObjectClassBasedMapTest
     private class FirstKeyChild extends FirstKey {}
     private class SecondKey implements Key {}
     
-    private ExactKeyObjectClassBasedMap<Key, String> map = new ExactKeyObjectClassBasedMap<>();
+    private ExactClassBasedMap<Key, String> map = new ExactClassBasedMap<>();
     
     @Test
     public void correctFlow() throws UnableToGetValue

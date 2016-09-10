@@ -6,7 +6,7 @@ import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 import pl.lukaszmakuch.container.Exception.UnableToGetValue;
 
-public class UpperBoundedKeyObjectClassBasedMapTest
+public class UpperBoundedClassBasedMapTest
 {
     @Rule
     public ExpectedException thrown = ExpectedException.none();
@@ -16,7 +16,7 @@ public class UpperBoundedKeyObjectClassBasedMapTest
     private class FirstKeyChild extends FirstKey {}
     private class SecondKey implements Key {}
     
-    private UpperBoundedKeyObjectClassBasedMap<Key, String> map = new UpperBoundedKeyObjectClassBasedMap<>();
+    private UpperBoundedClassBasedMap<Key, String> map = new UpperBoundedClassBasedMap<>();
 
     @Test
     public void correctFlow() throws UnableToGetValue
