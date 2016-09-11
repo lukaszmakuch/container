@@ -1,6 +1,5 @@
 package pl.lukaszmakuch.container.ObjectToObject;
 
-import pl.lukaszmakuch.container.ObjectToObject.UpperBoundedClassBasedMap;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Rule;

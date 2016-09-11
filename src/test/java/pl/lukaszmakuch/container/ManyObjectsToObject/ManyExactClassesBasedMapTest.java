@@ -1,6 +1,5 @@
 package pl.lukaszmakuch.container.ManyObjectsToObject;
 
-import pl.lukaszmakuch.container.ManyObjectsToObject.ManyExactClassesBasedMap;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Rule;
