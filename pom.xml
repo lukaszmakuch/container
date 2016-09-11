@@ -10,7 +10,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <license>
             <name>MIT License</name>
             <url>http://www.opensource.org/licenses/mit-license.php</url>
-            <distribution>repo</distribution>
+            <distribution>manual</distribution>
         </license>
     </licenses>
 
