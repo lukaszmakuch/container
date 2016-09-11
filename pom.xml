@@ -18,6 +18,10 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <artifactId>container</artifactId>
     <packaging>jar</packaging>
     <version>0.0.1</version>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <dependency>
