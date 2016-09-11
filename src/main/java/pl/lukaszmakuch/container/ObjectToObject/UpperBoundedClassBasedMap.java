@@ -1,4 +1,4 @@
-package pl.lukaszmakuch.container;
+package pl.lukaszmakuch.container.ObjectToObject;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

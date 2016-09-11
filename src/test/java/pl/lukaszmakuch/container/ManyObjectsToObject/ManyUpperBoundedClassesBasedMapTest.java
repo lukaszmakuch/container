@@ -1,5 +1,6 @@
-package pl.lukaszmakuch.container;
+package pl.lukaszmakuch.container.ManyObjectsToObject;
 
+import pl.lukaszmakuch.container.ManyObjectsToObject.ManyUpperBoundedClassesBasedMap;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.junit.Rule;

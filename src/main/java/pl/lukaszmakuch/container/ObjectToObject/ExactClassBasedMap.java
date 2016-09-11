@@ -1,4 +1,4 @@
-package pl.lukaszmakuch.container;
+package pl.lukaszmakuch.container.ObjectToObject;
 
 import pl.lukaszmakuch.container.Exception.UnableToGetValue;
 import java.util.Map;

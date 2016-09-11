@@ -1,4 +1,4 @@
-package pl.lukaszmakuch.container;
+package pl.lukaszmakuch.container.ManyObjectsToObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,8 +22,6 @@ public class ManyExactClassesBasedMap<E> implements ManyObjectsToObjectMap<E>
     @Override
     public E getValueBy(Object... keyObjects) throws UnableToGetValue
     {
-        //because it should work with java 7 and it makes no sense to include
-        //a libary for that single method
         List<Class> keyObjectsClasses = new ArrayList<>();
         for (Object o: keyObjects) {
             keyObjectsClasses.add(o.getClass());
@@ -31,19 +29,9 @@ public class ManyExactClassesBasedMap<E> implements ManyObjectsToObjectMap<E>
 
         E foundValue = valuesByClasses.get(keyObjectsClasses);
         if (null == foundValue) {
-            String listOfUnsupportedClasses = "";
-            for (Class c: keyObjectsClasses) {
-                if (!listOfUnsupportedClasses.isEmpty()) {
-                    listOfUnsupportedClasses += ", ";
-                }
-                
-                listOfUnsupportedClasses += c.getCanonicalName();
-            }
-            throw new UnableToGetValue(String.format(
-                "there's no value associated with the following list of classes: %s",
-                listOfUnsupportedClasses
-            ));
+            throw new UnableToGetValue("there's no value associated with the given list of key objects");
         }
+        
         return foundValue;
     }
 }

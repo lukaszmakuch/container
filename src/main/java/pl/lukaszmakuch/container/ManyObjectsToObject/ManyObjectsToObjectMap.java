@@ -1,4 +1,4 @@
-package pl.lukaszmakuch.container;
+package pl.lukaszmakuch.container.ManyObjectsToObject;
 
 import pl.lukaszmakuch.container.Exception.UnableToGetValue;
 
